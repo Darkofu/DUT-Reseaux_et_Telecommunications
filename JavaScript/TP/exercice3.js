@@ -1,0 +1,14 @@
+var compteur_1=2 ;
+document.write("compteur_1: value: ",compteur_1, " type: ", typeof(compteur_1),"<br/>");
+var _text= "Bonjour" ;
+document.write("_text: value: ",_text, " type: ", typeof(_text),"<br/>");
+var Ma_Var_1=34.5 ;
+document.write("Ma_Var_1: value: ",Ma_Var_1, " type: ", typeof(Ma_Var_1),"<br/>");
+var cond1=true ;
+document.write("cond1: value: ",cond1, " type: ", typeof(cond1),"<br/>");
+var cond2=false ;
+document.write("cond2: value: ",cond2, " type: ", typeof(cond2),"<br/>");
+var cond3=cond1 && cond2 ;
+document.write("cond3: value: ",cond3, " type: ", typeof(cond3),"<br/>");
+var cond4=cond1||cond2 ;
+document.write("cond4: value: ",cond4, " type: ", typeof(cond4),"<br/>");

@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//FR"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<meta http-equiv="CONTENT-TYPE" content="text/html; charset=windows-1252">
+		<title>Conversion de températures</title>
+		<script type="text/javascript">
+			function CF(C){
+				return 9/5 * C + 32
+			}
+			function FC(F){
+				return (F-32) * 5/9
+			}
+		</script>
+	</head>
+	<body dir="ltr" lang="fr-FR" >
+		<script type="text/javascript">
+		if (prompt("f pour convertir de farnheit en Celcius\n c pour convertir de Celcius en farnheit ?","") =="f") {
+			T= parseInt(prompt("Entrez la temperature en farnheit",""));
+			alert (T+" degres F --> "+FC(T) +" degres C")
+		} else {
+			T= parseInt(prompt("Entrez la temperature en celcius",""));
+			alert (T+" degres C --> "+CF(T) +" degres F")
+		}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<title>Actions utilisateur et JavaScript</title>
+<script>
+function retournormal () {
+document.documentElement.style.backgroundColor='white';
+document.documentElement.style.color='black';
+document.getElementById('bnuit').style.color='black';
+}
+</script>
+</head>
+<body onload="alert('bienvenue...');"
+onunload="alert('au revoir !');" onkeydown="if (event.keyCode==39) {alert('au suivant !');}">
+<h1>Actions utilisateur et JavaScript</h1>
+<p id="miaou">
+Un chat
+</p>
+<div class="illustration">
+<img src="chat.jpeg" alt="un chat" width="200"
+onmouseover="alert('ron ron...');" />
+</div>
+<button onclick="document.getElementById('miaou').style.color='red';">cliquez ici !</button>
+<br />
+<button id="bnuit"
+onclick="document.documentElement.style.backgroundColor='black';
+document.documentElement.style.color='white';
+document.getElementById('bnuit').style.color='red';">
+nuit</button>
+<button onclick="retournormal();">jour</button>
+<br />
+<div class="illustration">
+<img id="ecran" src="chat.jpeg" alt="Chat" width="200"
+onmouseover="document.getElementById('ecran').src='chat.jpeg'"
+onmouseout="document.getElementById('ecran').setAttribute('src','chien.jpeg');" />
+</div>
+</body>
+</html>

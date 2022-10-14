@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Test de modification sur click bouton</h1>
+<button type="button" onclick="myFunction()">Click Me!</button>
+<p id="demo">Ce texte va changer...</p>
+<script>
+var change=false;
+function myFunction() {
+if (!change) {
+document.getElementById("demo").innerHTML = "Nouveau texte !";
+change=true;
+}
+else {
+change=false;
+document.getElementById("demo").innerHTML = "Ancien texte !";
+}
+}
+</script>
+</body>
+</html>

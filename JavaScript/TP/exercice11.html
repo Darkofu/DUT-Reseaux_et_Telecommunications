@@ -1,0 +1,19 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//FR"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="CONTENT-TYPE" content="text/html;">
+<title>Le titre</title>
+<script type="text/javascript">
+function chrono() {
+memoire = (document.getElementById('chronometre').innerHTML);
+memoire++;
+document.getElementById('chronometre').innerHTML = memoire;
+}
+setInterval("chrono()", 1000) //-->
+</script>
+</head>
+<body>
+<h1><div id='chronometre' > 0 </div></h1>
+</body>
+</html>
