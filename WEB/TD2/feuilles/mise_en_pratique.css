@@ -1,0 +1,20 @@
+.citation
+{
+font-weight: bold;
+}
+.auteurs
+{
+font-style: italic;
+}
+#français
+{
+color: purple;
+}
+#anglais
+{
+color: green;
+}
+
+h::after {
+	content: " - Citation de préférence";
+	color: red;}
